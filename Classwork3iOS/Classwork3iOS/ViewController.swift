@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         
         // MARK: -  قم باستدعاء الداله هنا
-        
+        addName(name:name , helloArray: helloLangauge, flaghArray: flagLanguage)
         
         // MARK: -  النهايه⚠️⚠️لا تقم بغير تحت هذا السطر
         
@@ -47,7 +47,12 @@ class ViewController: UIViewController {
     
     
     // MARK: -  قم بكتابة الداله هنا
-    
+    func addName(name:String, helloArray:[String], flaghArray:[String]){
+        for i in 0 ..< greetingArray.count{
+            greetingArray[i] = name + helloArray[i] + flaghArray[i] 
+        }
+        
+    }
     
     
     // MARK: -   النهايه⚠️⚠️ لا تقوم بغير تحت هذا السطر
